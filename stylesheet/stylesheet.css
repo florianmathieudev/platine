@@ -109,9 +109,77 @@
 .buttons {
     position: absolute;
     margin: auto;
-    top: 250px;
+    top: 80px;
     bottom: 0;
-    left: 260px;
+    left: 290px;
+    right: 0;
+    width: 10px;
+    height: 80px;
+}
+
+#button1:hover span.txt {
+    visibility: visible;
+    left: 4px;
+    top: 1px;
+    color: #EBEBEB
+}
+
+#button2:hover span.txt {
+    visibility: visible;
+    left: 4px;
+    top: 1px;
+    color: #EBEBEB
+}
+
+#button3:hover span.txt {
+    visibility: visible;
+    left: 4px;
+    top: 1px;
+    color: #EBEBEB
+}
+
+#button1:hover {    
+    content: "";
+    border-radius: 10px 10px 10px 10px;
+    background: #ff4d80;    
+    width: 55px;
+    height: 10px;
+    transition-duration: 500ms;
+}
+
+#button2:hover {    
+    content: "";
+    border-radius: 10px 10px 10px 10px;
+    background: #ff4d80;    
+    width: 55px;
+    height: 10px;
+    transition-duration: 500ms;
+}
+
+#button3:hover {    
+    content: "";
+    border-radius: 10px 10px 10px 10px;
+    background: #ff4d80;    
+    width: 55px;
+    height: 10px;
+    transition-duration: 500ms;
+}
+
+span.txt {
+    position: absolute;
+    visibility: hidden;
+    font-size: 6px;
+    
+}
+
+#button1 {
+    
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0px;
     width: 10px;
     height: 10px;
@@ -119,28 +187,52 @@
     border-radius: 50%;
 }
 
-.buttons::before,
-.buttons::after {
-    content: "";
+#button2:hover {
+    content: "Formation";
+    
+    border-radius: 10px 10px 10px 10px;
+    background: #ff4d80;
+
+    width: 55px;
+    transition-duration: 500ms;
+}
+
+#button2 {
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 40px;
     bottom: 0;
-    right: 0;
+    left: 0;
+    right: 0px;
     width: 10px;
     height: 10px;
+    background: #ff784f;
     border-radius: 50%;
 }
 
-.buttons::before {
-    background: #ff784f;
-    left: 20px;
+#button3:hover {
+    content: "Formation";
+    border-radius: 10px 10px 10px 10px;
+    background: #ff4d80;
+
+    width: 55px;
+    transition-duration: 500ms;
 }
 
-.buttons::after {
-    background: #ff784f;
-    left: 40px;
+#button3 {
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    background: #2D3E4F;
+    border-radius: 50%;
 }
+
+
 
 .tone-arm {
     position: absolute;
@@ -261,3 +353,4 @@
     90% { transform: rotate(20.5deg); }
     100% { transform: rotate(20deg); }
 }
+
